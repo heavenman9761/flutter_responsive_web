@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_responsive_web/util/asset_path.dart';
 import 'package:flutter_responsive_web/util/menu_util.dart';
-import 'package:flutter_responsive_web/mqtt.dart';
+
 import '../../util/my_color.dart';
 import '../../util/text_util.dart';
 import '../custom_text_button.dart';
@@ -22,8 +22,6 @@ class Menu extends StatelessWidget {
           InkWell(
             onTap: () {
               MenuUtil.changeIndex(context, 0);
-              print("asdfasdf");
-              mqttInit("14.42.209.174", 7016, "mings", "Sct91234!");
             },
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
